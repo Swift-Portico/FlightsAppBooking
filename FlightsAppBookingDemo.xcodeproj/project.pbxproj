@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A864AF226C5983100A53602 /* FlightsAppBookingDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864AF126C5983100A53602 /* FlightsAppBookingDemoApp.swift */; };
+		6A864AF426C5983100A53602 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864AF326C5983100A53602 /* ContentView.swift */; };
+		6A864AF626C5983400A53602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A864AF526C5983400A53602 /* Assets.xcassets */; };
+		6A864AF926C5983500A53602 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A864AF826C5983500A53602 /* Preview Assets.xcassets */; };
+		6A864B0426C5988A00A53602 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B0326C5988A00A53602 /* NetworkService.swift */; };
+		6A864B0626C59ACD00A53602 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B0526C59ACD00A53602 /* FlightListViewModel.swift */; };
+		6A864B0826C59B0400A53602 /* FlightsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B0726C59B0400A53602 /* FlightsListModel.swift */; };
+		6A864B0A26C59BBD00A53602 /* FlightsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B0926C59BBD00A53602 /* FlightsDetailModel.swift */; };
+		6A864B0D26C59D0800A53602 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B0C26C59D0800A53602 /* EndPoint.swift */; };
+		6A864B1026C6245500A53602 /* FlightCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B0F26C6245500A53602 /* FlightCardView.swift */; };
+		6A864B1226C69FBE00A53602 /* FlightsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B1126C69FBE00A53602 /* FlightsDetailView.swift */; };
+		6A864B1526C6A3BD00A53602 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B1426C6A3BD00A53602 /* Properties.swift */; };
+		6A864B1726C8062C00A53602 /* FlightsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A864B1626C8062C00A53602 /* FlightsDetailViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A864AEE26C5983100A53602 /* FlightsAppBookingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightsAppBookingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A864AF126C5983100A53602 /* FlightsAppBookingDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsAppBookingDemoApp.swift; sourceTree = "<group>"; };
+		6A864AF326C5983100A53602 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6A864AF526C5983400A53602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A864AF826C5983500A53602 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6A864B0326C5988A00A53602 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6A864B0526C59ACD00A53602 /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
+		6A864B0726C59B0400A53602 /* FlightsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListModel.swift; sourceTree = "<group>"; };
+		6A864B0926C59BBD00A53602 /* FlightsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDetailModel.swift; sourceTree = "<group>"; };
+		6A864B0C26C59D0800A53602 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		6A864B0E26C5A4ED00A53602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6A864B0F26C6245500A53602 /* FlightCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCardView.swift; sourceTree = "<group>"; };
+		6A864B1126C69FBE00A53602 /* FlightsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDetailView.swift; sourceTree = "<group>"; };
+		6A864B1426C6A3BD00A53602 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		6A864B1626C8062C00A53602 /* FlightsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDetailViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A864AEB26C5983100A53602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A864AE526C5983100A53602 = {
+			isa = PBXGroup;
+			children = (
+				6A864AF026C5983100A53602 /* FlightsAppBookingDemo */,
+				6A864AEF26C5983100A53602 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A864AEF26C5983100A53602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A864AEE26C5983100A53602 /* FlightsAppBookingDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A864AF026C5983100A53602 /* FlightsAppBookingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6A864B1326C6A3AD00A53602 /* Utils */,
+				6A864B0E26C5A4ED00A53602 /* Info.plist */,
+				6A864B0226C5986D00A53602 /* Network Layer */,
+				6A864B0126C5985400A53602 /* ViewModel */,
+				6A864B0026C5984C00A53602 /* Model */,
+				6A864AFF26C5984700A53602 /* Views */,
+				6A864AF126C5983100A53602 /* FlightsAppBookingDemoApp.swift */,
+				6A864AF326C5983100A53602 /* ContentView.swift */,
+				6A864AF526C5983400A53602 /* Assets.xcassets */,
+				6A864AF726C5983500A53602 /* Preview Content */,
+			);
+			path = FlightsAppBookingDemo;
+			sourceTree = "<group>";
+		};
+		6A864AF726C5983500A53602 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6A864AF826C5983500A53602 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6A864AFF26C5984700A53602 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A864B0F26C6245500A53602 /* FlightCardView.swift */,
+				6A864B1126C69FBE00A53602 /* FlightsDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A864B0026C5984C00A53602 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A864B0726C59B0400A53602 /* FlightsListModel.swift */,
+				6A864B0926C59BBD00A53602 /* FlightsDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A864B0126C5985400A53602 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A864B0526C59ACD00A53602 /* FlightListViewModel.swift */,
+				6A864B1626C8062C00A53602 /* FlightsDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6A864B0226C5986D00A53602 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				6A864B0B26C59CF800A53602 /* EndPoint */,
+				6A864B0326C5988A00A53602 /* NetworkService.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		6A864B0B26C59CF800A53602 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				6A864B0C26C59D0800A53602 /* EndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		6A864B1326C6A3AD00A53602 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6A864B1426C6A3BD00A53602 /* Properties.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A864AED26C5983100A53602 /* FlightsAppBookingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A864AFC26C5983500A53602 /* Build configuration list for PBXNativeTarget "FlightsAppBookingDemo" */;
+			buildPhases = (
+				6A864AEA26C5983100A53602 /* Sources */,
+				6A864AEB26C5983100A53602 /* Frameworks */,
+				6A864AEC26C5983100A53602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightsAppBookingDemo;
+			productName = FlightsAppBookingDemo;
+			productReference = 6A864AEE26C5983100A53602 /* FlightsAppBookingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A864AE626C5983100A53602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6A864AED26C5983100A53602 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 6A864AE926C5983100A53602 /* Build configuration list for PBXProject "FlightsAppBookingDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A864AE526C5983100A53602;
+			productRefGroup = 6A864AEF26C5983100A53602 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A864AED26C5983100A53602 /* FlightsAppBookingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A864AEC26C5983100A53602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A864AF926C5983500A53602 /* Preview Assets.xcassets in Resources */,
+				6A864AF626C5983400A53602 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A864AEA26C5983100A53602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A864B0826C59B0400A53602 /* FlightsListModel.swift in Sources */,
+				6A864AF426C5983100A53602 /* ContentView.swift in Sources */,
+				6A864B1226C69FBE00A53602 /* FlightsDetailView.swift in Sources */,
+				6A864B1026C6245500A53602 /* FlightCardView.swift in Sources */,
+				6A864B1726C8062C00A53602 /* FlightsDetailViewModel.swift in Sources */,
+				6A864B0426C5988A00A53602 /* NetworkService.swift in Sources */,
+				6A864B0626C59ACD00A53602 /* FlightListViewModel.swift in Sources */,
+				6A864B0A26C59BBD00A53602 /* FlightsDetailModel.swift in Sources */,
+				6A864B0D26C59D0800A53602 /* EndPoint.swift in Sources */,
+				6A864B1526C6A3BD00A53602 /* Properties.swift in Sources */,
+				6A864AF226C5983100A53602 /* FlightsAppBookingDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6A864AFA26C5983500A53602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A864AFB26C5983500A53602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A864AFD26C5983500A53602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightsAppBookingDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = KJ5YAFMP48;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightsAppBookingDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = FlightsAppBookingDemo;
+				INFOPLIST_KEY_CFBundleName = FlightsAppBookingDemo;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demosample.iOS.FlightsAppBookingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A864AFE26C5983500A53602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightsAppBookingDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = KJ5YAFMP48;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightsAppBookingDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = FlightsAppBookingDemo;
+				INFOPLIST_KEY_CFBundleName = FlightsAppBookingDemo;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demosample.iOS.FlightsAppBookingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A864AE926C5983100A53602 /* Build configuration list for PBXProject "FlightsAppBookingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A864AFA26C5983500A53602 /* Debug */,
+				6A864AFB26C5983500A53602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A864AFC26C5983500A53602 /* Build configuration list for PBXNativeTarget "FlightsAppBookingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A864AFD26C5983500A53602 /* Debug */,
+				6A864AFE26C5983500A53602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A864AE626C5983100A53602 /* Project object */;
+}
